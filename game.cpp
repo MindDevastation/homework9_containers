@@ -69,7 +69,7 @@ void Game::sumScore(){
             if(numbers.at(i - 1) == "c" || numbers.at(i - 1) == "C"){
                 tempD = std::stoi(numbers.at(iter - 1)) + std::stoi(numbers.at(iter - 2));
             }else if(numbers.at(i - 1) == "d" || numbers.at(i - 1) == "D" || numbers.at(i - 1) == "+"){
-                tempD = tempD + std::stoi(numbers.at(iter - 2));
+                tempD = tempD + std::stoi(numbers.at(iter- 1));
             }else{
                 tempD = std::stoi(numbers.at(i - 1)) + std::stoi(numbers.at(i - 2));
             }

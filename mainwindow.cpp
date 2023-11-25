@@ -40,7 +40,7 @@ void MainWindow::on_Start_clicked()
     ui->yourArray->setText("Your array: " + enterList);
     this->score.sumScore();
 
-    ui->yourRes->setNum(this->score.getResult());
+    ui->yourRes->setText("Your result: " + QString::number(this->score.getResult()));
     ui->Start->setEnabled(false);
 }
 
